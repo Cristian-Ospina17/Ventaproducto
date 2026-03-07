@@ -9,4 +9,7 @@ public class Producto {
         this.precio = precio;
         this.stock = stock;
     }
+    public double calcularDescuento(double porcentaje) {
+        return precio - (precio * porcentaje / 100);
+    }
 }
