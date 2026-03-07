@@ -9,7 +9,18 @@ public class Producto {
         this.precio = precio;
         this.stock = stock;
     }
+
     public double calcularDescuento(double porcentaje) {
         return precio - (precio * porcentaje / 100);
+    }
+
+    public void mostrarDetalles() {
+        System.out.println("Producto: " + nombre);
+        System.out.println("Precio: " + precio);
+        System.out.println("Stock: " + stock);
+    }
+
+    public void actualizarStock(int cantidad) {
+        stock = stock + cantidad;
     }
 }
