@@ -23,11 +23,15 @@ public class Producto {
         stock   = stock + cantidad;
     }
 }
-public void venderProducto(int cantidad) {
-    if(stock >= cantidad){
-        stock -= cantidad;
-        System.out.println("Venta realizada");
-    } else {
-        System.out.println("Stock insuficiente");
+    public void venderProducto(int cantidad) {
+        if(stock >= cantidad){
+            stock -= cantidad;
+            System.out.println("Venta realizada");
+        } else {
+            System.out.println("Stock insuficiente");
+        }
+    }
+    public void cambiarPrecio(double nuevoPrecio){
+        precio = nuevoPrecio;
     }
 }
