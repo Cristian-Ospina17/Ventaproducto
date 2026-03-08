@@ -19,3 +19,7 @@ public class Producto {
         System.out.println("Precio: " + precio);
         System.out.println("Stock: " + stock);
     }
+    public void actualizarStock(int cantidad) {
+        stock   = stock + cantidad;
+    }
+}
